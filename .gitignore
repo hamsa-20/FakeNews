@@ -1,0 +1,17 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+
+# Data
+data/processed/
+data/raw/
+
+# Checkpoints / models
+checkpoints/
+*.pt
+*.pkl
+
+# IDE / OS
+.vscode/
+.DS_Store
