@@ -62,7 +62,8 @@ Processed data will be saved in `data/processed/`.
 
 ## Training
 
-Train the text model: python -m src.train.train_text
+Train the text model: 
+python -m src.train.train_text
 
 Make sure to set proper hyperparameters (batch size, epochs, learning rate) in your config (`cfg.yaml`).
 
@@ -70,7 +71,8 @@ Make sure to set proper hyperparameters (batch size, epochs, learning rate) in y
 
 ## Running the Backend API
 
-Start the FastAPI server: uvicorn backend.main:app --reload
+Start the FastAPI server:
+uvicorn backend.main:app --reload
 
 Access the API at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
