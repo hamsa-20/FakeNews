@@ -16,12 +16,9 @@ cd multimodal-fake-news-detection
 
 python -m venv venv
 
-For Windows
-venv\Scripts\activate
+For Windows: venv\Scripts\activate
 
-For macOS/Linux
-source venv/bin/activate
-
+For macOS/Linux: source venv/bin/activate
 
 ### Install Dependencies
 
