@@ -1,14 +1,17 @@
-# Python virtual environment
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 venv/
 
-# Data folders
+# Data
 data/raw/
 data/processed/
 
-# Model checkpoints
+# Checkpoints / models
 checkpoints/
 
-# Cache and logs
-__pycache__/
-*.log
-*.pyc
+# OS files
+.DS_Store
+Thumbs.db
