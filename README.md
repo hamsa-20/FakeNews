@@ -11,7 +11,6 @@ A multimodal fake news detection system combining text, images, and social media
 git clone <your-repo-url>
 cd multimodal-fake-news-detection
 
-text
 
 ### Create and Activate Virtual Environment
 
@@ -23,13 +22,10 @@ venv\Scripts\activate
 For macOS/Linux
 source venv/bin/activate
 
-text
 
 ### Install Dependencies
 
 pip install -r requirements.txt
-
-text
 
 ---
 
@@ -41,13 +37,10 @@ Create dummy `.jsonl` files with structure like:
 {"text": "This is fake news example.", "image_path": "data/samples/sample.jpg", "social_features": ["100", "50", "10"], "label": 0}
 {"text": "This is real news example.", "image_path": "data/samples/sample2.jpg", "social_features": ["200", "70", "20"], "label": 1}
 
-text
 Place files in:
 data/raw/Twitter/twitter.jsonl
 data/raw/MediaEval/mediaeval.jsonl
 data/raw/SocialContext/socialcontext.jsonl
-
-text
 
 ### Option 2: Real Data  
 - Twitter / FakeNewsNet: Download from [Kaggle](https://kaggle.com). Place in `data/raw/Twitter/`.
@@ -65,7 +58,6 @@ python -m src.data.preprocess_mediaeval
 python -m src.data.preprocess_socialcontext
 python -m src.data.preprocess_fake_newsnet
 
-text
 
 Processed data will be saved in `data/processed/`.
 
@@ -73,11 +65,7 @@ Processed data will be saved in `data/processed/`.
 
 ## Training
 
-Train the text model:
-
-python -m src.train.train_text
-
-text
+Train the text model: python -m src.train.train_text
 
 Make sure to set proper hyperparameters (batch size, epochs, learning rate) in your config (`cfg.yaml`).
 
@@ -85,11 +73,7 @@ Make sure to set proper hyperparameters (batch size, epochs, learning rate) in y
 
 ## Running the Backend API
 
-Start the FastAPI server:
-
-uvicorn backend.main:app --reload
-
-text
+Start the FastAPI server: uvicorn backend.main:app --reload
 
 Access the API at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
