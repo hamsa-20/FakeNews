@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Multimodal Fake News Detection
 
 This project implements a **multimodal fake news detection system** using text, images, and social context features. The backend is built with **FastAPI**, and training is done using **PyTorch**.  
@@ -117,3 +118,7 @@ bash
 Copy code
 uvicorn backend.main:app --reload
 Access the API at: http://127.0.0.1:8000
+=======
+# MultimodelFakeNews
+A multimodal fake news detection system that combines text, image, and social media data using advanced feature fusion techniques for accurate and robust misinformation identification.
+>>>>>>> 9e633db8279a34d683fa8053e30139344ad3b685
