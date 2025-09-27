@@ -1,17 +1,14 @@
-# Python
-*.pyc
-__pycache__/
+# Python virtual environment
 venv/
 
-# Data
-data/processed/
+# Data folders
 data/raw/
+data/processed/
 
-# Checkpoints / models
+# Model checkpoints
 checkpoints/
-*.pt
-*.pkl
 
-# IDE / OS
-.vscode/
-.DS_Store
+# Cache and logs
+__pycache__/
+*.log
+*.pyc
